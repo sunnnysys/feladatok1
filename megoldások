@@ -1,0 +1,64 @@
+
+package feladatok1;
+
+import java.util.Scanner;
+
+
+public class Feladatok1 {
+
+
+    public static void main(String[] args) {
+        
+          Scanner scanner = new Scanner(System.in);
+          
+///////////////Két szám közül a nagyobb kiírása
+
+        System.out.println("Két szám közül a nagyobb kiírása:");
+        System.out.println("Kérek két egész számot.");
+        System.out.println("Első: ");
+        int num1 = scanner.nextInt();
+        System.out.println("Második: ");
+        int num2 = scanner.nextInt();
+        
+        if (num1 > num2){
+            System.out.println(num1 + " nagyobb, mint " + num2 + ".");
+        }
+        else if (num2 > num1){
+            System.out.println(num1 + " kisebb, mint " + num2 + ".");
+        }
+        else{
+            System.out.println("A két szám egyenlő.");
+        }
+        
+        System.out.println("");
+        
+///////////////Két szám közös osztóinak kiírása
+          
+        System.out.println("Két szám közös osztóinak kiírása:");
+        System.out.println("Kérek két egész számot.");
+        System.out.println("Első szám: ");
+        int num3 = scanner.nextInt();
+        System.out.println("Második szám: ");
+        int num4 = scanner.nextInt();
+        
+        System.out.println("A két szám közös osztói:");
+        int nagyobb;
+        
+        if(num3 > num4){
+        nagyobb = num3;
+        }
+        else{
+        nagyobb = num4;   
+        }
+                       
+        for(int i = 1; i< nagyobb; i++){                  
+            if(num3%i == 0 && num4%i == 0)
+            System.out.println(i);           
+        }
+        
+        System.out.println("");
+        
+       }
+    }
+    
+
