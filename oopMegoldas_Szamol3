@@ -14,17 +14,17 @@ public class Szamol3 {
         return this.num1;
     }
 
-    public void setNum1(int _num1) {
-        num1 = _num1;
-    }
+//    public void setNum1(int _num1) {
+//        num1 = _num1;
+//    }
 
     public int getNum2() {
         return this.num2;
     }
 
-    public void setNum2(int _num2) {
-        num2 = _num2;
-    }
+//    public void setNum2(int _num2) {
+//       num2 = _num2;
+//    }
 
     public int relacio() {
         if (num1 > num2) {
