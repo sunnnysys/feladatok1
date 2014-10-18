@@ -21,13 +21,14 @@ public class Szamol3Teszt {
         System.out.println("");
         System.out.println("Két szám relációjának kiírása:");
         if (sz.getNum1() != sz.getNum2()) {
-            System.out.println(sz.getNum1() + " " + sz.relacio() + " mint " + sz.getNum2() + ".");
+            System.out.println(sz.getNum1() + " " + sz.relacio() + ", mint " + sz.getNum2() + ".");
         } else {
             System.out.println(sz.getNum1() + " " + sz.relacio() + " " + sz.getNum2() + ".");
         }
 
         System.out.println("");
         System.out.println("Két szám közös osztóinak kiírása:");
+        System.out.println("A két szám közös osztói:");
         System.out.println(sz.kozosOszto());
     }
 }
@@ -38,8 +39,6 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Szamol3 {
-
-    private static Scanner scanner = new Scanner(System.in);        // ide is kell a private?
 
     private int num1;
     private int num2;
