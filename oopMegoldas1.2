@@ -1,0 +1,64 @@
+package szamol2;
+
+import java.util.Scanner;
+
+public class Szamol2 {
+
+    static Scanner scanner = new Scanner(System.in);
+    int num1;
+    int num2;
+
+    public Szamol2(int num1, int num2) {
+        num1 = 0;
+        num2 = 0;
+    }
+
+    public void relacio(int num1, int num2) {
+        System.out.println("");
+        System.out.println("Két szám közül a nagyobb kiírása:");
+        if (num1 > num2) {
+            System.out.println(num1 + " nagyobb, mint " + num2 + ".");
+        } else if (num2 > num1) {
+            System.out.println(num1 + " kisebb, mint " + num2 + ".");
+        } else {
+            System.out.println("A két szám egyenlő.");
+        }
+    }
+
+    public void kozosOszto(int num1, int num2) {
+        System.out.println("");
+        System.out.println("Két szám közös osztóinak kiírása:");
+        int nagyobb;
+
+        if (num1 > num2) {
+            nagyobb = num1;
+        } else {
+            nagyobb = num2;
+        }
+
+        for (int i = 1; i < nagyobb; i++) {
+            if (num1 % i == 0 && num2 % i == 0) {
+                System.out.println(i);
+            }
+        }
+    }
+
+    public int area() {
+        return num1 * num2;
+    }
+
+    public static void main(String[] args) {
+
+        System.out.println("");
+        System.out.println("Kérek két egész számot.");
+        System.out.println("Első szám: ");
+        int num1 = scanner.nextInt();
+        System.out.println("Második szám: ");
+        int num2 = scanner.nextInt();
+
+        Szamol2 sz = new Szamol2(num1, num2);
+        sz.relacio(num1, num2);
+        sz.kozosOszto(num1, num2);
+    }
+
+}
