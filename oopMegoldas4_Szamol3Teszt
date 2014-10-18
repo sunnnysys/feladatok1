@@ -6,21 +6,23 @@ public class Szamol3Teszt {
 
     public static void main(String[] args) {
 
-        Szamol3 sz = new Szamol3(0, 0);
+        // Szamol3 sz = new Szamol3(0, 0);
 
         System.out.println("");
         System.out.println("Kérek két egész számot.");
 
         System.out.println("Első szám: ");
         int _num1 = scanner.nextInt();
-        sz.setNum1(_num1);
+        // sz.setNum1(_num1);
         System.out.println("Második szám: ");
         int _num2 = scanner.nextInt();
-        sz.setNum2(_num2);
+        // sz.setNum2(_num2);
 
         System.out.println("");
         System.out.println("Két szám relációjának kiírása:");
 
+        Szamol3 sz = new Szamol3(_num1, _num2);
+        
         switch (sz.relacio()) {
             case 1:
                 System.out.println(sz.getNum1() + " " + "nagyobb, mint " + sz.getNum2() + ".");
