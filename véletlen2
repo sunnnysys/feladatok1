@@ -69,15 +69,11 @@ public class Tarolo {
     }
 
     public ArrayList veletlen() {
-        final ArrayList a = new ArrayList();
         final ArrayList al = new ArrayList();
         Random random = new Random();
         for (int i = 0; i <= meret - 1; ++i) {
             int randomInt = random.nextInt(1000);
-            a.add(randomInt);
-        }
-        for (int i = 0; i <= meret - 1; ++i) {
-            al.add(a.get(i));
+            al.add(randomInt);
         }
         return al;
     }
